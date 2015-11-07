@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC40F04E1BECE6230092877C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC40F04D1BECE6230092877C /* main.cpp */; };
+		CC40F0561BECE69A0092877C /* hellp.c in Sources */ = {isa = PBXBuildFile; fileRef = CC40F0541BECE69A0092877C /* hellp.c */; };
+		CC40F05F1BED78C50092877C /* ffm-predict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC40F05A1BED78C50092877C /* ffm-predict.cpp */; };
+		CC40F0601BED78C50092877C /* ffm-train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC40F05B1BED78C50092877C /* ffm-train.cpp */; };
+		CC40F0611BED78C50092877C /* ffm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC40F05C1BED78C50092877C /* ffm.cpp */; };
+		CC40F0621BED78C50092877C /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = CC40F05E1BED78C50092877C /* Makefile */; };
+		CC40F0661BED87270092877C /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC40F0651BED87270092877C /* libiomp5.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,17 @@
 
 /* Begin PBXFileReference section */
 		CC40F04A1BECE6230092877C /* myOpenMP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myOpenMP; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC40F04D1BECE6230092877C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CC40F0541BECE69A0092877C /* hellp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hellp.c; sourceTree = "<group>"; };
+		CC40F0551BECE69A0092877C /* hellp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hellp.h; sourceTree = "<group>"; };
+		CC40F0571BED78C50092877C /* bigdata.te.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bigdata.te.txt; sourceTree = "<group>"; };
+		CC40F0581BED78C50092877C /* bigdata.tr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bigdata.tr.txt; sourceTree = "<group>"; };
+		CC40F0591BED78C50092877C /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		CC40F05A1BED78C50092877C /* ffm-predict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ffm-predict.cpp"; sourceTree = "<group>"; };
+		CC40F05B1BED78C50092877C /* ffm-train.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ffm-train.cpp"; sourceTree = "<group>"; };
+		CC40F05C1BED78C50092877C /* ffm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ffm.cpp; sourceTree = "<group>"; };
+		CC40F05D1BED78C50092877C /* ffm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffm.h; sourceTree = "<group>"; };
+		CC40F05E1BED78C50092877C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CC40F0651BED87270092877C /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiomp5.dylib; path = ../../../../usr/local/Cellar/libiomp/20150701/lib/libiomp5.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC40F0661BED87270092877C /* libiomp5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,7 @@
 		CC40F0411BECE6230092877C = {
 			isa = PBXGroup;
 			children = (
+				CC40F0651BED87270092877C /* libiomp5.dylib */,
 				CC40F04C1BECE6230092877C /* myOpenMP */,
 				CC40F04B1BECE6230092877C /* Products */,
 			);
@@ -57,7 +74,16 @@
 		CC40F04C1BECE6230092877C /* myOpenMP */ = {
 			isa = PBXGroup;
 			children = (
-				CC40F04D1BECE6230092877C /* main.cpp */,
+				CC40F0571BED78C50092877C /* bigdata.te.txt */,
+				CC40F0581BED78C50092877C /* bigdata.tr.txt */,
+				CC40F0591BED78C50092877C /* COPYRIGHT */,
+				CC40F05A1BED78C50092877C /* ffm-predict.cpp */,
+				CC40F05B1BED78C50092877C /* ffm-train.cpp */,
+				CC40F05C1BED78C50092877C /* ffm.cpp */,
+				CC40F05D1BED78C50092877C /* ffm.h */,
+				CC40F05E1BED78C50092877C /* Makefile */,
+				CC40F0541BECE69A0092877C /* hellp.c */,
+				CC40F0551BECE69A0092877C /* hellp.h */,
 			);
 			path = myOpenMP;
 			sourceTree = "<group>";
@@ -118,7 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC40F04E1BECE6230092877C /* main.cpp in Sources */,
+				CC40F0621BED78C50092877C /* Makefile in Sources */,
+				CC40F0561BECE69A0092877C /* hellp.c in Sources */,
+				CC40F0611BED78C50092877C /* ffm.cpp in Sources */,
+				CC40F05F1BED78C50092877C /* ffm-predict.cpp in Sources */,
+				CC40F0601BED78C50092877C /* ffm-train.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +237,16 @@
 		CC40F0521BECE6230092877C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CC = "/usr/local/bin/clang-omp";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libiomp/20150701/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fopenmp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +254,16 @@
 		CC40F0531BECE6230092877C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CC = "/usr/local/bin/clang-omp";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libiomp/20150701/lib,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fopenmp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
