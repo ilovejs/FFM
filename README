@@ -1,5 +1,5 @@
 
-### Compiled version of FFM in Xcode 7.1 with OpenMP in setting.
+## Compiled version of FFM in Xcode 7.1 with OpenMP in setting.
 
 Useful things:
 
@@ -15,7 +15,9 @@ Prerequisite:
 
            **Tips**:
 
-		this file may come with clang-omp already, if not check: https://clang-omp.github.io Section-‘using clang-mop with xcode’)
+		this file may come with clang-omp already, 
+		
+		if not check: https://clang-omp.github.io Section-‘using clang-omp with xcode’)
  
   	3. make sure you have
 
@@ -25,7 +27,9 @@ Prerequisite:
 
            /usr/local/bin/clang-omp++
  
-        4. I’m using Xcode 7.1 with latest command-line tool (gcc 5+), not gnu version of gcc. Since GNU gcc have mop lib file in their source code. I believe 
+        4. I’m using Xcode 7.1 with latest command-line tool (gcc 5+), not gnu version of gcc. 
+        
+        5. refer to http://openmp.llvm.org/
 
 =================
 LIBFFM is a library for field-aware factorization machine. For the formulation it solves, please check:
